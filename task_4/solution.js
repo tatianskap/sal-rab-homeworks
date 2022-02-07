@@ -2,17 +2,17 @@
 
 function parseProducts(json) {
 
-let data = JSON.parse(json);
-let products = data.products ;
+   let data = JSON.parse(json);
+   let products = data.products ;
 
     return products;
 }
 
 function renderProductsCards(json) {
 
-clearProducts();
-let products = parseProducts(json);
-let length = products.length;
+   clearProducts();
+   let products = parseProducts(json);
+   let length = products.length;
 
   for(let i = 0; i <= length-1; i += 1){
         addProduct(products[i]); 
